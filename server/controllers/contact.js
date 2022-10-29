@@ -13,7 +13,7 @@ module.exports.displaycontactList = (req, res, next) => {
         }
         else
         {
-            //console.log(BookList);
+            //console.log
 
             res.render('contact/list', 
             {title: 'Contacts Business List', 
@@ -43,7 +43,7 @@ module.exports.processAddPage = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
+            // refresh 
             res.redirect('/contact-list');
         }
     }));
@@ -87,7 +87,7 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
+            // refresh 
             res.redirect('/contact-list');
         }
     });
@@ -104,7 +104,7 @@ module.exports.performDelete = (req, res, next) => {
         }
         else
         {
-             // refresh the book list
+             // refresh 
              res.redirect('/contact-list');
         }
     });

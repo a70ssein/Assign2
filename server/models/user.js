@@ -12,15 +12,7 @@ let User = mongoose.Schema
             trim: true,
             required: 'username is required'
         },
-        /*
-        password: 
-        {
-            type: String,
-            default: '';
-            trim: true,
-            required: 'password is required'
-        }
-        */
+   
        email: 
        {
             type: String,
@@ -51,7 +43,7 @@ let User = mongoose.Schema
     }
 );
 
-// configure options for User Model
+// configure options
 
 let options = ({ missingPasswordError: 'Wrong / Missing Password'});
 

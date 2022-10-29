@@ -88,14 +88,14 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contact-list', contactsRouter);
 
-// catch 404 and forward to error handler
+// catch 404 
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
+  // set locals
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 

@@ -36,7 +36,7 @@ module.exports.displayContactPage = (req, res, next) => {
 
 module.exports.displayLoginPage = (req, res, next) => {
 
- // check if the user is already logged in
+ // check if the user is logged in
  if(!req.user)
  {
      res.render('auth/login', 

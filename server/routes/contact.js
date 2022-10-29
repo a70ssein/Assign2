@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// connect to our Book Model
+// connect to  Model
 //let contact = require('../models/contact');
 
 let passport = require('passport');
@@ -23,7 +23,7 @@ function requireAuth(req, res, next)
     next();
 }
 
-/* GET Route for the Book List page - READ Operation */
+/* GET Route for the  page - READ Operation */
 router.get('/',  contactController.displaycontactList);
 
 
